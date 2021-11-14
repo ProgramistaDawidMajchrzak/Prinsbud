@@ -1,0 +1,72 @@
+@import url("https://use.typekit.net/emq7dwp.css");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gimlet-text, serif;
+  width: 100%;
+  height: auto;
+  background-color: #293241;
+}
+body .container {
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+body .container .logo-container {
+  width: 100%;
+  height: 80px;
+  margin-top: 40px;
+}
+body .container .logo-container img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+body .container nav {
+  width: 40%;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #98c1d9;
+  border-radius: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container nav .active {
+  color: #ee6c4d;
+}
+body .container nav a {
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #293241;
+  transition: 0.25s ease;
+}
+body .container nav a:hover {
+  color: #ee6c4d;
+}
+body footer {
+  width: 100%;
+  height: 40px;
+  background-color: #98c1d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+body footer p {
+  font-weight: 400;
+  font-size: 14px;
+}/*# sourceMappingURL=App.css.map */
