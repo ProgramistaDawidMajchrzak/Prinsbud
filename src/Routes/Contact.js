@@ -1,6 +1,20 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_vcdqxog', 'template_iz6k5oj', e.target, 'user_rJlig4QrDCQoBTMRscre6')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
+
     return (
         <>
             <div className="route-contact-box">
@@ -22,11 +36,11 @@ export default function Contact() {
                         Telefon: 724060954
                     </p>
                 </div>
-                <form>
-                    <input type="text" placeholder='Imię' />
-                    <input type="text" placeholder='Nazwa firmy' />
-                    <input type="text" placeholder='E-mail' />
-                    <textarea type="text" placeholder='Wiadomość' />
+                <form onSubmit={sendEmail}>
+                    <input type="text" placeholder='Imię' name='name' />
+                    <input type="text" placeholder='Nazwa firmy' name='company' />
+                    <input type="text" placeholder='E-mail' name='mail' />
+                    <textarea type="text" placeholder='Wiadomość' name='message' />
                     <input className='sending-button' type="submit" value='Wyślij' />
                 </form>
             </div>
