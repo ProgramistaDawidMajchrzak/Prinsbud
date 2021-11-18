@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
   NavLink
@@ -15,7 +15,7 @@ import Contact from './Routes/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="container">
         <div className="logo-container">
           <img src={logo} alt="logo" />
@@ -34,7 +34,7 @@ function App() {
       <footer>
         <p>© 2021 PRINSBUD</p>
       </footer>
-    </BrowserRouter >
+    </Router >
   );
 }
 
