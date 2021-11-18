@@ -5,12 +5,12 @@ body {
   box-sizing: border-box;
   font-family: gimlet-text, serif;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #293241;
 }
 body .container {
   width: 80%;
-  height: 100%;
+  height: auto;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
@@ -122,13 +122,14 @@ body .container .route-about-box .second-right {
 }
 body .container .route-contact-box {
   width: 100%;
-  height: 100%;
+  height: 300px;
   display: flex;
   justify-content: space-around;
 }
 body .container .route-contact-box .left-info {
   width: 400px;
   height: auto;
+  margin-top: 50px;
 }
 body .container .route-contact-box .left-info h2 {
   color: #e0fbfc;
@@ -140,7 +141,7 @@ body .container .route-contact-box form {
   width: 500px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 body .container .route-contact-box form input {
   background-color: transparent;
@@ -180,6 +181,64 @@ body .container .route-contact-box form ::placeholder {
   color: #e0fbfc;
   font-size: 14px;
 }
+body .container .product-box-gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+body .container .product-box-gallery-image {
+  width: 250px;
+  margin: 5px;
+  height: 250px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body .container .product-box-gallery-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  cursor: pointer;
+  border-radius: 20px;
+}
+body .container .product-box-gallery-image img:hover {
+  opacity: 0.7;
+}
+body .container .image-lightbox {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .image-lightbox .image-lightbox-opacity {
+  height: 100%;
+  width: 100%;
+  background-color: #e0fbfc;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 5;
+}
+body .container .image-lightbox img {
+  position: absolute;
+  z-index: 10;
+  max-width: 90%;
+  max-height: 90%;
+}
+body .container .image-lightbox .image-lightbox-close-icon {
+  position: absolute;
+  color: #293241;
+  right: 2%;
+  top: 2%;
+  z-index: 10;
+  cursor: pointer;
+}
 body footer {
   width: 100%;
   height: 40px;
@@ -193,4 +252,62 @@ body footer {
 body footer p {
   font-weight: 400;
   font-size: 14px;
+}
+@media (max-width: 768px) {
+  body .container {
+    width: 100%;
+  }
+  body .container .logo-container {
+    height: 50px;
+  }
+  body .container nav {
+    width: 90%;
+  }
+  body .container .route-about-box {
+    width: 90%;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  body .container .route-about-box .text-box {
+    width: 90%;
+  }
+  body .container .route-about-box .about-images {
+    width: 100%;
+  }
+  body .container .route-about-box .about-image-one {
+    margin-top: 40px;
+    height: auto;
+    width: 300px;
+  }
+  body .container .route-about-box .about-image-two {
+    margin-top: 40px;
+    height: auto;
+    width: 300px;
+    left: 0;
+  }
+  body .container .route-about-box .background-filter {
+    display: none;
+  }
+  body .container .route-contact-box {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  body .container .route-contact-box .left-info {
+    width: 100%;
+    margin-top: 50px;
+  }
+  body .container .route-contact-box form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  body .container .image-lightbox {
+    position: fixed;
+    top: 20%;
+    height: 70%;
+  }
 }/*# sourceMappingURL=App.css.map */

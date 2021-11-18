@@ -12,12 +12,12 @@ body {
     box-sizing: border-box;
     font-family: gimlet-text, serif;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: $bg-color;
 
     .container {
         width: 80%;
-        height: 100%;
+        height: auto;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
@@ -146,13 +146,14 @@ body {
 
         .route-contact-box {
             width: 100%;
-            height: 100%;
+            height: 300px;
             display: flex;
             justify-content: space-around;
 
             .left-info {
                 width: 400px;
                 height: auto;
+                margin-top: 50px;
 
                 h2 {
                     color: $third-color;
@@ -167,7 +168,7 @@ body {
                 width: 500px;
                 display: flex;
                 flex-direction: column;
-                margin-top: 20px;
+                margin-top: 70px;
 
                 input {
                     background-color: transparent;
@@ -205,6 +206,70 @@ body {
                 }
             }
         }
+
+        .product-box-gallery {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 70px;
+        }
+
+        .product-box-gallery-image {
+            width: 250px;
+            margin: 5px;
+            height: 250px;
+            object-fit: fill;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+                cursor: pointer;
+                border-radius: 20px;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+
+        .image-lightbox {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .image-lightbox-opacity {
+                height: 100%;
+                width: 100%;
+                background-color: $third-color;
+                opacity: .8;
+                position: absolute;
+                z-index: 5;
+            }
+
+            img {
+                position: absolute;
+                z-index: 10;
+                max-width: 90%;
+                max-height: 90%;
+            }
+
+            .image-lightbox-close-icon {
+                position: absolute;
+                color: $bg-color;
+                right: 2%;
+                top: 2%;
+                z-index: 10;
+                cursor: pointer;
+            }
+        }
     }
 
     footer {
@@ -220,6 +285,81 @@ body {
         p {
             font-weight: 400;
             font-size: 14px;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+
+            .logo-container {
+                height: 50px;
+            }
+
+            nav {
+                width: 90%;
+
+            }
+
+            .route-about-box {
+                width: 90%;
+                flex-direction: column;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                .text-box {
+                    width: 90%;
+                }
+
+                .about-images {
+                    width: 100%;
+                }
+
+                .about-image-one {
+                    margin-top: 40px;
+                    height: auto;
+                    width: 300px;
+                }
+
+                .about-image-two {
+                    margin-top: 40px;
+                    height: auto;
+                    width: 300px;
+                    left: 0;
+                }
+
+                .background-filter {
+                    display: none;
+                }
+
+            }
+
+            .route-contact-box {
+                width: 90%;
+                height: auto;
+                flex-direction: column;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                .left-info {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+
+                form {
+                    width: 100%;
+                    margin-top: 30px;
+
+                }
+            }
+
+            .image-lightbox {
+                position: fixed;
+                top: 20%;
+                height: 70%;
+            }
         }
     }
 }
