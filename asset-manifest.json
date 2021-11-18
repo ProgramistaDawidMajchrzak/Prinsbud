@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Prinsbud/static/css/main.fec4d270.chunk.css",
+    "main.js": "/Prinsbud/static/js/main.68eaf942.chunk.js",
+    "main.js.map": "/Prinsbud/static/js/main.68eaf942.chunk.js.map",
+    "runtime-main.js": "/Prinsbud/static/js/runtime-main.aab49c0c.js",
+    "runtime-main.js.map": "/Prinsbud/static/js/runtime-main.aab49c0c.js.map",
+    "static/js/2.6956ab67.chunk.js": "/Prinsbud/static/js/2.6956ab67.chunk.js",
+    "static/js/2.6956ab67.chunk.js.map": "/Prinsbud/static/js/2.6956ab67.chunk.js.map",
+    "index.html": "/Prinsbud/index.html",
+    "static/css/main.fec4d270.chunk.css.map": "/Prinsbud/static/css/main.fec4d270.chunk.css.map",
+    "static/js/2.6956ab67.chunk.js.LICENSE.txt": "/Prinsbud/static/js/2.6956ab67.chunk.js.LICENSE.txt",
+    "static/media/PRINSBUD-logo.1f31ee3f.png": "/Prinsbud/static/media/PRINSBUD-logo.1f31ee3f.png",
+    "static/media/about-img.d48688ec.jpg": "/Prinsbud/static/media/about-img.d48688ec.jpg",
+    "static/media/about-img2.bf99c254.jpg": "/Prinsbud/static/media/about-img2.bf99c254.jpg",
+    "static/media/gallery-2.33238524.jpg": "/Prinsbud/static/media/gallery-2.33238524.jpg",
+    "static/media/gallery-3.942dbcdf.jpg": "/Prinsbud/static/media/gallery-3.942dbcdf.jpg",
+    "static/media/gallery-4.095efb9c.jpg": "/Prinsbud/static/media/gallery-4.095efb9c.jpg",
+    "static/media/gallery-5.acb4335a.jpg": "/Prinsbud/static/media/gallery-5.acb4335a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aab49c0c.js",
+    "static/js/2.6956ab67.chunk.js",
+    "static/css/main.fec4d270.chunk.css",
+    "static/js/main.68eaf942.chunk.js"
+  ]
+}
