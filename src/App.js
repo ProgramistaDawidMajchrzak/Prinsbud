@@ -39,3 +39,5 @@ function App() {
 }
 
 export default App;
+
+// "homepage": "https://programistadawidmajchrzak.github.io/Prinsbud/"
