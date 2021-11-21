@@ -1,6 +1,7 @@
+import { Clear } from '@mui/icons-material';
 import React, { useState } from 'react';
 
-import ClearIcon from '@mui/icons-material/Clear';
+import ClearIcon from '../images/closeIcon.png';
 
 import gallery1 from '../images/gallery-2.jpg';
 import gallery2 from '../images/gallery-3.jpg';
@@ -37,7 +38,7 @@ export default function Gallery() {
             {openLightbox && <div className="image-lightbox">
                 <div onClick={() => setOpenLightBox(false)} className="image-lightbox-opacity"></div>
                 <img src={galleryImages[lightbox - 1].imageSrc} alt="img" />
-                <ClearIcon onClick={() => setOpenLightBox(false)} className='image-lightbox-close-icon' />
+                <img src={ClearIcon} alt='img' onClick={() => setOpenLightBox(false)} className='image-lightbox-close-icon' />
             </div>}
         </>
     )
