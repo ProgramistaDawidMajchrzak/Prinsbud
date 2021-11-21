@@ -13,6 +13,7 @@ export default function Contact() {
                 console.log(error.text);
             });
         e.target.reset();
+        alert('Wiadomość została wysłana.')
     }
 
     return (
@@ -37,10 +38,10 @@ export default function Contact() {
                     </p>
                 </div>
                 <form onSubmit={sendEmail}>
-                    <input type="text" placeholder='Imię' name='name' />
-                    <input type="text" placeholder='Nazwa firmy' name='company' />
-                    <input type="text" placeholder='E-mail' name='mail' />
-                    <textarea type="text" placeholder='Wiadomość' name='message' />
+                    <input type="text" placeholder='Imię' name={'name'} />
+                    <input type="text" placeholder='Nazwa firmy' name={'company'} />
+                    <input type="text" placeholder='E-mail' name={'mail'} />
+                    <textarea type="text" placeholder='Wiadomość' name={'message'} />
                     <input className='sending-button' type="submit" value='Wyślij' />
                 </form>
             </div>
