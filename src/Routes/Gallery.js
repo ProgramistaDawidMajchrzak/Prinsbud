@@ -1,4 +1,4 @@
-import { Clear } from '@mui/icons-material';
+
 import React, { useState } from 'react';
 
 import ClearIcon from '../images/closeIcon.png';
